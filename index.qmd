@@ -1,0 +1,7 @@
+---
+title: "index"
+format: html
+editor: visual
+---
+
+This is a Quarto doc without Shiny called `index.qmd`.

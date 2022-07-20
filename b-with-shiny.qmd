@@ -1,0 +1,37 @@
+---
+title: "b-with-shiny"
+format: html
+server: shiny
+---
+
+This is a Quarto doc with Shiny called `b-with-shiny.qmd`.
+
+## Input widget
+
+```{r radio_input}
+radioButtons(
+  inputId = "radio_input",
+  label = "Are you a cat person or a dog person?",
+  choices = c(
+    "Cat person",
+    "Dog person",
+    "Don't make me choose!",
+    "Neither :("
+  ),
+  selected = "Don't make me choose!"
+)
+```
+
+## Widget value
+
+```{r radio_output}
+#| context: server
+
+output$radio_output = renderPrint({
+  input$radio_input
+})
+```
+
+```{r radio_output_text}
+verbatimTextOutput("radio_output")
+```

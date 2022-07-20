@@ -1,0 +1,7 @@
+---
+title: "a-without-shiny"
+format: html
+editor: visual
+---
+
+This is a Quarto doc without Shiny called `a-without-shiny.qmd`.
